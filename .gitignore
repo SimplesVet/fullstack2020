@@ -5,10 +5,10 @@ app/node_modules
 /api/vendor*
 
 # ignora tudo no diretório "mysql/data"
-mysql/data/
+docker/mysql/data/
 
 # ignora tudo no diretório "nginx/logs"
-nginx/logs/
+docker/nginx/logs/
 
 # local env files
 .env.local

@@ -26,7 +26,9 @@ $app->add(new \Tuupola\Middleware\Cors([
 
 $app->get('/clientes', function ($request, $response, $args) {
     $ret = [
-        ['id' => 1, 'nome' => 'Salvador']
+        ['id' => 1, 'nome' => 'Salvador'],
+        ['id' => 2, 'nome' => 'Thalita'],
+        ['id' => 3, 'nome' => 'Mateus'],
     ];
 
     return $response->withJson($ret)->withStatus(200);
