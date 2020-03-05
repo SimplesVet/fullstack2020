@@ -1,3 +1,5 @@
-# fullstack2020
+# SimplesVet fullstack2020
 
-Para iniciar, basta rodar `docker-compose up` e ver as instruções para o front em `./app/README.md`
+Para iniciar: 
+- Rodar `docker-compose up` na pasta raiz (pode demorar alguns minutos)
+- Ver as instruções para o front em `./app/README.md`
