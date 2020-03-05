@@ -15,6 +15,15 @@ $configSlim = [
 
 $app = new Slim\App($configSlim);
 
+$container = $app->getContainer();
+
+$container['sanitize'] = function () {
+    return function ($fields) {
+        return $fields = App\Lib\Sanitize::filter($fields);
+    };
+};
+
+// CORS
 $app->add(new \Tuupola\Middleware\Cors([
     "origin" => ["*"],
     "methods" => ["OPTIONS", "GET", "POST", "PUT", "PATCH", "DELETE"],
@@ -24,14 +33,9 @@ $app->add(new \Tuupola\Middleware\Cors([
     "cache" => 0 //,
 ]));
 
-$app->get('/clientes', function ($request, $response, $args) {
-    $ret = [
-        ['id' => 1, 'nome' => 'Salvador'],
-        ['id' => 2, 'nome' => 'Thalita'],
-        ['id' => 3, 'nome' => 'Mateus'],
-    ];
-
-    return $response->withJson($ret)->withStatus(200);
+// Rotas
+$app->group('/clientes', function () {
+    $this->get('', App\Controllers\ClientesController::class . ':listar');
 });
 
 $app->run();
