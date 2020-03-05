@@ -1,6 +1,14 @@
 .DS_Store
 app/node_modules
-/dist
+/app/dist
+
+/api/vendor*
+
+# ignora tudo no diretório "mysql/data"
+mysql/data/
+
+# ignora tudo no diretório "nginx/logs"
+nginx/logs/
 
 # local env files
 .env.local
