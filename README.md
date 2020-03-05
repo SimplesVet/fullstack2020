@@ -1,15 +1,15 @@
 # SimplesVet fullstack2020
 
 ## Instruções
-- [Importe esse projeto para sua conta do Github](https://help.github.com/pt/github/importing-your-projects-to-github/importing-a-repository-with-github-importer) como projeto privado e adicione @ssatorres, @matneves e @gwmoura no seu projeto.
+- Importe esse projeto para sua conta do Github como um projeto privado e adicione @ssatorres, @matneves e @gwmoura no seu projeto. ([saiba como](https://help.github.com/pt/github/importing-your-projects-to-github/importing-a-repository-with-github-importer))
 - A lista do que fazer está no arquivo [ISSUES.md](./ISSUES.md)
 
 ### Ciclo de desenvolvimento
 Usamos algo parecido com `Feature Branch`, então:
 
 - Para cada `issue`, é necessário criar uma `branch` a partir da `master`. 
-- Ao concluir o desenvolvimento de CADA `issue`, criar um `pull request` e realizar o `merge` através dele.
-- Todos os objetos criados ou as modificações realizadas no banco de dados, devem ser colocadas no arquivo `db/1.desafio.sql` OU gere um `dump` do banco ao final do projeto e coloque no mesmo arquivo
+- Ao concluir o desenvolvimento de CADA `issue`, crie um `pull request` e realize o `merge` através dele.
+- Todos os objetos criados ou as modificações realizadas no banco de dados, devem ser colocadas no arquivo `db/1.desafio.sql` OU gere um `dump` do banco ao final do projeto e coloque no mesmo arquivo.
 
 ## Rodando o projeto
 Para rodar o projeto, é preciso ter instalado:
