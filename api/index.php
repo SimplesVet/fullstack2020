@@ -36,6 +36,10 @@ $app->add(new \Tuupola\Middleware\Cors([
 // Rotas
 $app->group('/clientes', function () {
     $this->get('', App\Controllers\ClientesController::class . ':listar');
+    $this->get('/{id:[0-9]+}', App\Controllers\ClientesController::class . ':listar');
+    $this->post('', App\Controllers\ClientesController::class . ':inserir');
+    $this->put('/{id:[0-9]+}', App\Controllers\ClientesController::class . ':alterar');
+    $this->delete('/{id:[0-9]+}', App\Controllers\ClientesController::class . ':excluir');
 });
 
 $app->run();
