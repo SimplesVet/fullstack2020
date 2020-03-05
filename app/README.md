@@ -1,12 +1,12 @@
 # app
 
-## Project setup
+## Instalação do projeto
 
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Execução e atualização automática (hot reload)
 
 ```
 yarn serve
