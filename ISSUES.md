@@ -6,10 +6,13 @@ Usamos Kanban pra tudo, então se ligue: **Uma coisa de cada vez, até o fim, o 
 
 Indico que você use o próprio `Projects` do Github para gerenciar as tarefas. É simples, e a gente conseque acompanhar daqui
 
-## 1 - Erro ao remover um cliente
+## 1 - Erro clicar pra editar um cliente
+Em qualquer linha que eu clico, aparece sempre o nome de Salvador... Ex: cliquei em George, e apareceu Salvador.
+
+## 2 - Erro ao remover um cliente
 Quando tento remover um cliente, nada acontece... =(
 
-## 2 - Adicionar campo de telefone nos formulários de inclusão e atualização de Clientes
+## 3 - Adicionar campo de telefone nos formulários de inclusão e atualização de Clientes
 O desenvolvedor que estava com essa tela, está de férias e esqueceu de adicionar o campo de telefone na tela de Clientes.
 
 - Regras
@@ -17,7 +20,7 @@ O desenvolvedor que estava com essa tela, está de férias e esqueceu de adicion
     - É preciso adicionar o campo tanto na inclusão quanto na edição.
     - Esse campo precisa de máscara para celular
 
-## 3 - Adicionar campo de Data de Nascimento no Cadastro de Clientes
+## 4 - Adicionar campo de Data de Nascimento no Cadastro de Clientes
 Para que possamos mandar mensagem de aniverário pra o cliente, precisamos da informação do nascimento.
 
 - Regras
@@ -27,7 +30,7 @@ Para que possamos mandar mensagem de aniverário pra o cliente, precisamos da in
     - É necessário que o campo tenha um `date picker` para facilitar o preenchimento na tela
     - Deve ser exibida a `idade` do cliente na listagem como uma nova coluna.
 
-## 4 - Criar tabela, view e endpoints de espécie
+## 5 - Criar tabela, view e endpoints de espécie
 Essa tabela é importante e será usada no cadastro de animais... 
 
 - Campos:
@@ -38,7 +41,7 @@ Essa tabela é importante e será usada no cadastro de animais...
     - Não precisa de tela de cadastro (CRUD)
     - Pode incluir alguns registros direto no banco como Canina, Felina, etc.
 
-## 5 - Criar tela para cadastro de animais
+## 6 - Criar tela para cadastro de animais
 A tela de Animais vai ser semelhante à de Clientes, porém com alguns campos diferentes.
 
 - Campos: 
@@ -53,7 +56,7 @@ A tela de Animais vai ser semelhante à de Clientes, porém com alguns campos di
     - Os campos `cliente` e `especie` devem ser um `combobox` de seleção única.
     - Obs: Um cliente pode ter mais de um animal
 
-## 6 - O click no cliente não funciona em toda a área da linha
+## 7 - O click no cliente não funciona em toda a área da linha
 Segue vídeo com o comportamento:
 
 ![erro](https://user-images.githubusercontent.com/1444980/76023432-ef27e380-5f07-11ea-8ed9-cff0b3a6f3bf.gif)
