@@ -42,7 +42,7 @@ class Cliente extends Model {
         return  PDOHelpers::procedure($this->pdo, $query, $params);
     }
 
-    public function excluir($params)
+    public function exclui($params)
     {
         $query = "CALL sp_clientes_del(:id, @p_status, @p_msg);";
         return PDOHelpers::procedure($this->pdo, $query, $params);
